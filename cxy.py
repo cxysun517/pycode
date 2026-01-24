@@ -16,7 +16,7 @@ print(__name__)
 if __name__ == '__main__':
     print('我是cxy，今天要炒一个回锅肉')
     cxy_cook_step()
-    print('cxy炒完回锅肉啦')
+    print('cxy炒完回锅肉啦!')
 
 # 如果直接运行此cxy.py文件，__name__值为__main__，功能调试代码就可以被执行，运行结果如下
 
@@ -26,4 +26,4 @@ if __name__ == '__main__':
 # 第二步，洗菜
 # 第三步，切菜
 # 第四步，炒菜
-# cxy炒完回锅肉啦
+# cxy炒完回锅肉啦!
