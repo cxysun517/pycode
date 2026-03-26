@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
-import datetime
 
 # input()函数用于从标准输入（通常是键盘）读取一个字符串
 pwd = input("请输入密码：")
