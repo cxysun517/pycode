@@ -394,3 +394,17 @@ print(find_url(string))  # (['com', 'cn'], ['https://www.baidu.com', 'http://www
 [0-9a-fA-F]{2} 匹配由两个大小写字母或数字组成的字符串，如00，dc，a8
 (:[0-9a-fA-F]{2}){5} 匹配冒号后跟两个大小写字母或数字组成的字符串，匹配5次，如:0C:29:88:83:1A
 '''
+
+'''
+提取日期信息（年、月、日）并格式化输出
+'''
+contents = ['2019-01-01 12:00', '2019-01-02 12:30', '2019-01-03 13:00']
+pattern = re.compile(r'(\d{4})-(\d{2})-(\d{2})')
+
+for content in contents:
+    match = pattern.match(content)
+    if match:
+        year, month, day = match.groups()
+        print(f'Year:{year} Month:{month} Day:{day}')
+    else:
+        print("Match failed for:", content)
